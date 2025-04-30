@@ -17,6 +17,8 @@ restapi:
     
 pytest:
   - https://www.youtube.com/watch?v=cHYq1MRoyI0&ab_channel=freeCodeCamp.org
+  - https://www.youtube.com/watch?v=EgpLj86ZHFQ&ab_channel=TechWithTim
+  - https://www.youtube.com/watch?v=ScEQRKwUePI
     
 git:
   - https://gitexercises.fracz.com/
