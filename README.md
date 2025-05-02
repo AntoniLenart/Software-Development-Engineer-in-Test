@@ -22,6 +22,7 @@ pytest:
 
 docker:
   -  https://www.youtube.com/watch?v=pg19Z8LL06w&ab_channel=TechWorldwithNana
+  -  https://www.youtube.com/watch?v=DQdB7wFEygo&ab_channel=TheCodingSloth (XD)
 
 git:
   - https://gitexercises.fracz.com/
@@ -32,4 +33,4 @@ k8s:
 Jenkins:
   - https://www.youtube.com/watch?v=6YZvp2GwT0A&ab_channel=DevOpsJourney
 
-<keeping updated> /last change 27.04
+<keeping updated> /last change 02.05
