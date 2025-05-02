@@ -19,7 +19,10 @@ pytest:
   - https://www.youtube.com/watch?v=cHYq1MRoyI0&ab_channel=freeCodeCamp.org
   - https://www.youtube.com/watch?v=EgpLj86ZHFQ&ab_channel=TechWithTim
   - https://www.youtube.com/watch?v=ScEQRKwUePI
-    
+
+docker:
+  -  https://www.youtube.com/watch?v=pg19Z8LL06w&ab_channel=TechWorldwithNana
+
 git:
   - https://gitexercises.fracz.com/
 
