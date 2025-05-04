@@ -23,6 +23,7 @@ pytest:
 docker:
   -  https://www.youtube.com/watch?v=pg19Z8LL06w&ab_channel=TechWorldwithNana
   -  https://www.youtube.com/watch?v=DQdB7wFEygo&ab_channel=TheCodingSloth (XD)
+  -  https://www.youtube.com/watch?v=SXwC9fSwct8&ab_channel=TechWorldwithNana
 
 git:
   - https://gitexercises.fracz.com/
