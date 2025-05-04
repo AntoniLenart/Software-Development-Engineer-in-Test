@@ -5,15 +5,11 @@ pipeline {
         }
     }
 
-    environment {
-        IMAGE_NAME = "antonilenart/small-project:latest"
-    }
-
     stages {
-        stage('Build Docker Image') {
+        stage('Install dependencies') {
             steps {
                 dir('small-project') {
-                    sh 'docker build -t $IMAGE_NAME .'
+                    sh 'pip install -r requirements.txt'
                 }
             }
         }
@@ -21,21 +17,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 dir('small-project') {
-                    sh 'docker run --rm $IMAGE_NAME pytest'
-                }
-            }
-        }
-
-        stage('Push to DockerHub') {
-            when {
-                branch 'main'
-            }
-            steps {
-                withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-                    sh '''
-                        echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
-                        docker push $IMAGE_NAME
-                    '''
+                    sh 'pytest'
                 }
             }
         }
