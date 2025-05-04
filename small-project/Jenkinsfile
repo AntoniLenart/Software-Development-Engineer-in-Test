@@ -6,15 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/AntoniLenart/Software-Development-Engineer-in-Test'
-                dir('small-project') {
-                    echo "repo cloned"
-                }
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 dir('small-project') {
